@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grades | Student Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+    }
+    .grade {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+    }
+    .grade h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+    .grade-value {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+    .status {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: white;
+    }
+    .passed { background-color: #27ae60; }
+    .failed { background-color: #e74c3c; }
+    .in-progress { background-color: #f39c12; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Student Portal</h1>
+    <p>Welcome, krish vora | <a href="logout.html" style="color: #ecf0f1;">Logout</a></p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="grades.html" class="active">Grades</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>My Grades</h2>
+
+    <!-- Grade 1 -->
+    <div class="grade">
+      <h3>Web Development</h3>
+      <p><span class="label">Instructor:</span> param</p>
+      <p><span class="label">Midterm:</span> 84%</p>
+      <p><span class="label">Final Exam:</span> 88%</p>
+      <p><span class="label">Project:</span> 92%</p>
+      <p><span class="label">Overall Grade:</span> <span class="grade-value">A</span></p>
+      <p><span class="label">Status:</span> <span class="status passed">Passed</span></p>
+      <p><span class="label">Remarks:</span> Excellent performance and on-time submissions.</p>
+    </div>
+
+    <!-- Grade 2 -->
+    <div class="grade">
+      <h3>Data Structures</h3>
+      <p><span class="label">Instructor:</span> haard</p>
+      <p><span class="label">Midterm:</span> 65%</p>
+      <p><span class="label">Final Exam:</span> 58%</p>
+      <p><span class="label">Project:</span> 62%</p>
+      <p><span class="label">Overall Grade:</span> <span class="grade-value">C</span></p>
+      <p><span class="label">Status:</span> <span class="status passed">Passed</span></p>
+      <p><span class="label">Remarks:</span> Needs improvement in exam performance.</p>
+    </div>
+
+    <!-- Grade 3 -->
+    <div class="grade">
+      <h3>Database Management Systems</h3>
+      <p><span class="label">Instructor:</span> krish vora</p>
+      <p><span class="label">Midterm:</span> 45%</p>
+      <p><span class="label">Final Exam:</span> 38%</p>
+      <p><span class="label">Project:</span> 50%</p>
+      <p><span class="label">Overall Grade:</span> <span class="grade-value">F</span></p>
+      <p><span class="label">Status:</span> <span class="status failed">Failed</span></p>
+      <p><span class="label">Remarks:</span> Must retake the course in the next semester.</p>
+    </div>
+
+    <!-- Grade 4 -->
+    <div class="grade">
+      <h3>Object-Oriented Programming in Java</h3>
+      <p><span class="label">Instructor:</span> sahil</p>
+      <p><span class="label">Midterm:</span> 78%</p>
+      <p><span class="label">Final Exam:</span> Not yet conducted</p>
+      <p><span class="label">Project:</span> In Progress</p>
+      <p><span class="label">Overall Grade:</span> <span class="grade-value">-</span></p>
+      <p><span class="label">Status:</span> <span class="status in-progress">In Progress</span></p>
+      <p><span class="label">Remarks:</span> Awaiting final evaluation.</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Portal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

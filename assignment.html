@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portal | Assignments</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f4f6;
+    }
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+    nav a.active {
+      background-color: #1abc9c;
+      border-radius: 4px;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    .assignment-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+    .assignment-table th, .assignment-table td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .status {
+      font-weight: bold;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .pending { background-color: #f39c12; color: white; }
+    .submitted { background-color: #2ecc71; color: white; }
+    .overdue { background-color: #e74c3c; color: white; }
+    .filters {
+      margin-bottom: 1rem;
+    }
+    .filters select {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Student Portal</h1>
+    <p>Welcome, krish vora | <a href="logout.html" style="color: #ecf0f1;">Logout</a></p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="assignments.html" class="active">Assignments</a></li>
+      <li><a href="grades.html">Grades</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="announcements.html">Announcements</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Assignment Filters -->
+    <div class="filters">
+      <label for="filter">Filter Assignments:</label>
+      <select id="filter">
+        <option>All</option>
+        <option>Pending</option>
+        <option>Submitted</option>
+        <option>Overdue</option>
+        <option>Upcoming</option>
+      </select>
+    </div>
+
+    <!-- Upcoming Assignments -->
+    <section>
+      <h2>Upcoming Assignments</h2>
+      <table class="assignment-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Course</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML Portfolio</td>
+            <td>Web Development</td>
+            <td>2025-07-10</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><a href="submit-assignment.html">Submit</a></td>
+          </tr>
+          <tr>
+            <td>Stack in C++</td>
+            <td>Data Structures</td>
+            <td>2025-07-13</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><a href="submit-assignment.html">Submit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Submitted Assignments -->
+    <section>
+      <h2>Submitted Assignments</h2>
+      <table class="assignment-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Course</th>
+            <th>Submitted On</th>
+            <th>Status</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ER Diagram</td>
+            <td>Database Systems</td>
+            <td>2025-07-04</td>
+            <td><span class="status submitted">Submitted</span></td>
+            <td><a href="view-submission.html">View</a></td>
+          </tr>
+          <tr>
+            <td>Java OOP Practice</td>
+            <td>Programming in Java</td>
+            <td>2025-06-30</td>
+            <td><span class="status submitted">Submitted</span></td>
+            <td><a href="view-submission.html">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Overdue Assignments -->
+    <section>
+      <h2>Overdue Assignments</h2>
+      <table class="assignment-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Course</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSS Flexbox Layout</td>
+            <td>Web Development</td>
+            <td>2025-07-01</td>
+            <td><span class="status overdue">Overdue</span></td>
+            <td><a href="submit-assignment.html">Submit Late</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Guidelines -->
+    <section>
+      <h2>Assignment Guidelines</h2>
+      <ul>
+        <li>Submit only PDF or DOCX files.</li>
+        <li>Name files using: `RollNumber_AssignmentName.pdf`</li>
+        <li>Late submissions may be penalized.</li>
+        <li>You can view submitted assignments but cannot resubmit after the deadline.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Portal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

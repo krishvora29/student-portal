@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timetable | Student Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+    }
+    .day-block {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .day-block h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .class-item {
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed #ccc;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Student Portal</h1>
+    <p>Welcome, krish vora | <a href="logout.html" style="color: #ecf0f1;">Logout</a></p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="grades.html">Grades</a>
+    <a href="timetable.html" class="active">Timetable</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Weekly Timetable</h2>
+
+    <!-- Monday -->
+    <div class="day-block">
+      <h3>Monday</h3>
+      <div class="class-item">
+        <p><span class="label">Time:</span> 10:00 AM - 11:30 AM</p>
+        <p><span class="label">Course:</span> Web Development</p>
+        <p><span class="label">Instructor:</span> Prof. Ananya Sharma</p>
+        <p><span class="label">Room:</span> B-204</p>
+      </div>
+      <div class="class-item">
+        <p><span class="label">Time:</span> 12:00 PM - 1:30 PM</p>
+        <p><span class="label">Course:</span> OOP in Java</p>
+        <p><span class="label">Instructor:</span> Mr. Suresh Patil</p>
+        <p><span class="label">Room:</span> Lab-1</p>
+      </div>
+    </div>
+
+    <!-- Tuesday -->
+    <div class="day-block">
+      <h3>Tuesday</h3>
+      <div class="class-item">
+        <p><span class="label">Time:</span> 2:00 PM - 3:30 PM</p>
+        <p><span class="label">Course:</span> Data Structures</p>
+        <p><span class="label">Instructor:</span> Dr. Rakesh Kumar</p>
+        <p><span class="label">Room:</span> C-101</p>
+      </div>
+    </div>
+
+    <!-- Wednesday -->
+    <div class="day-block">
+      <h3>Wednesday</h3>
+      <div class="class-item">
+        <p><span class="label">Time:</span> 10:00 AM - 11:30 AM</p>
+        <p><span class="label">Course:</span> Web Development</p>
+        <p><span class="label">Instructor:</span> Prof. Ananya Sharma</p>
+        <p><span class="label">Room:</span> B-204</p>
+      </div>
+    </div>
+
+    <!-- Thursday -->
+    <div class="day-block">
+      <h3>Thursday</h3>
+      <div class="class-item">
+        <p><span class="label">Time:</span> 12:00 PM - 1:30 PM</p>
+        <p><span class="label">Course:</span> OOP in Java</p>
+        <p><span class="label">Instructor:</span> Mr. Suresh Patil</p>
+        <p><span class="label">Room:</span> Lab-1</p>
+      </div>
+      <div class="class-item">
+        <p><span class="label">Time:</span> 2:00 PM - 3:30 PM</p>
+        <p><span class="label">Course:</span> Data Structures</p>
+        <p><span class="label">Instructor:</span> Dr. Rakesh Kumar</p>
+        <p><span class="label">Room:</span> C-101</p>
+      </div>
+    </div>
+
+    <!-- Friday -->
+    <div class="day-block">
+      <h3>Friday</h3>
+      <div class="class-item">
+        <p><span class="label">Time:</span> 11:00 AM - 1:00 PM</p>
+        <p><span class="label">Course:</span> Database Management Systems</p>
+        <p><span class="label">Instructor:</span> Dr. Meena Roy</p>
+        <p><span class="label">Room:</span> A-301</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Portal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

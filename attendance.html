@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance | Student Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+    }
+    .attendance-block {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .attendance-block h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+    .status {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: white;
+    }
+    .present { background-color: #27ae60; }
+    .low-attendance { background-color: #e74c3c; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Student Portal</h1>
+    <p>Welcome, John Doe | <a href="logout.html" style="color: #ecf0f1;">Logout</a></p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="grades.html">Grades</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="attendance.html" class="active">Attendance</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Attendance Overview</h2>
+
+    <!-- Attendance 1 -->
+    <div class="attendance-block">
+      <h3>Web Development</h3>
+      <p><span class="label">Instructor:</span> Prof. Ananya Sharma</p>
+      <p><span class="label">Total Classes:</span> 30</p>
+      <p><span class="label">Attended:</span> 28</p>
+      <p><span class="label">Attendance %:</span> 93%</p>
+      <p><span class="label">Status:</span> <span class="status present">Present</span></p>
+      <p><span class="label">Remarks:</span> Excellent attendance record.</p>
+    </div>
+
+    <!-- Attendance 2 -->
+    <div class="attendance-block">
+      <h3>Data Structures</h3>
+      <p><span class="label">Instructor:</span> Dr. Rakesh Kumar</p>
+      <p><span class="label">Total Classes:</span> 32</p>
+      <p><span class="label">Attended:</span> 24</p>
+      <p><span class="label">Attendance %:</span> 75%</p>
+      <p><span class="label">Status:</span> <span class="status present">Present</span></p>
+      <p><span class="label">Remarks:</span> Satisfactory, maintain consistency.</p>
+    </div>
+
+    <!-- Attendance 3 -->
+    <div class="attendance-block">
+      <h3>Database Management Systems</h3>
+      <p><span class="label">Instructor:</span> Dr. Meena Roy</p>
+      <p><span class="label">Total Classes:</span> 28</p>
+      <p><span class="label">Attended:</span> 18</p>
+      <p><span class="label">Attendance %:</span> 64%</p>
+      <p><span class="label">Status:</span> <span class="status low-attendance">Low Attendance</span></p>
+      <p><span class="label">Remarks:</span> Attendance below required threshold. Meet faculty advisor.</p>
+    </div>
+
+    <!-- Attendance 4 -->
+    <div class="attendance-block">
+      <h3>OOP in Java</h3>
+      <p><span class="label">Instructor:</span> Mr. Suresh Patil</p>
+      <p><span class="label">Total Classes:</span> 25</p>
+      <p><span class="label">Attended:</span> 25</p>
+      <p><span class="label">Attendance %:</span> 100%</p>
+      <p><span class="label">Status:</span> <span class="status present">Present</span></p>
+      <p><span class="label">Remarks:</span> Perfect attendance. Keep it up!</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Portal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
